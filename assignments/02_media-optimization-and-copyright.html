@@ -9,13 +9,36 @@
  </head>
  <body>
     <header>
-        <h3>02 Media Optimization and Copyright</h3>
+        <h1>02 Media Optimization and Copyright</h1>
     </header>
     <main>
-        <p>Nowadays, the form and content of web pages are very diverse, project files can be embedded within the text, images, video, links, code and other resources, images are generally png, jpg, webp and other formats, of which webp is very adaptable to the web page side, png can be a transparent channel, jpg is more general, video is usually mp4 format, there are other formats such as GIF, etc., and now the development of the web page usually use html, css, javascript are used for text frames, graphic styles and dynamic interactions respectively.
-
-            Translated with DeepL.com (free version)</p>
-        <h2>Image Optimization</h2>
+        <p>Nowadays, the form and content of web pages are very diverse, project files can be embedded within the text, images, video, links, code and other resources, images are generally png, jpg, webp and other formats, of which webp is very adaptable to the web page side, png can be a transparent channel, jpg is more general, video is usually mp4 format, there are other formats such as GIF, etc., and now the development of the web page usually use html, css, javascript are used for text frames, graphic styles and dynamic interactions respectively.</p>
+        <h2>Version2.0 -- Ffmpeg</h2>
+        <p>I use <a href="https://www.gyan.dev/ffmpeg/builds/"><strong>ffmpeg</strong></a>, a multi-media processing command-line tool library,</p> to compress the video/image and convert its format.
+        <p>I add ffmpeg in environment variables so that I can run ffmpeg directly in command line(cmd).</p>
+        <h3>Image Optimization</h3>
+        <strong>Convert png to jpg</strong>
+        <p>Add <strong>ffmpeg -i my/photo/direction converted/photo/direction</strong>, I drag the file in cmd to get the file path automatically</p>
+        <img src="../source/v1_img_1.png" alt="convert png format to jpg in cmd">
+        <strong>compress-image</strong>
+        <p>Add <strong>ffmpeg -i my/photo/direction -q:v 5 converted/photo/direction</strong>, -q:v 2 to -q:v 31, the number bigger, the quality lower.</p>
+        <img src="../source/v1_img_2.png" alt="compress image in cmd">
+        <p>compress-image from 12.4MB to 223KB</p>
+        <img src="../source/My portrait photo_1.jpg" alt="my compressed portrait photo">
+        <h3>Video Optimization</h3>
+        <strong>cut the video in 10s.</strong>
+        <p>Add <strong>ffmpeg -i my/file/direction -ss 00:00:00: -to 00:00:10 -c copy my/cutted/file/direction</strong></p>
+        <img src="../source/v1_video_1.png" alt="cut my video in cmd">
+        <strong>compress-video</strong>
+        <p>Add <strong>ffmpeg -i my/file/direction -b:v 1000k -c:a aac -b:a 128k my/compressed/file/direction</strong></p>
+        <img src="../source/v1_video_2.png" alt="compress video in cmd">
+        <p>compress video from 95.2MB,1:45Mins to 330KB,0:10Mins.</p>
+        <video src="../source/Lotus_1.mp4" type="video/mp4" controls></video>
+        <br>
+       <hr>
+        <br>
+        <h2>Version1.0 -- Online Tools</h2>
+        <h3>Image Optimization</h3>
             <img src="../source/My portrait photo.webp" alt="My portrait photo">
             <p>Optimized image parameters:</p>
 
@@ -33,7 +56,7 @@
                 0 have resized millions of images for free! There is no software to install, registrations, or watermarks.
             </p>
 
-            <h2>Video Optimization</h2>
+            <h3>Video Optimization</h3>
 
             <video src="../source/Lotus.mp4" type="video/mp4" controls></video>
 

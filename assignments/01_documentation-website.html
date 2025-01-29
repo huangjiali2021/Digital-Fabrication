@@ -9,11 +9,48 @@
  </head>
  <body>
     <p>I have learned HTML, CSS, and JavaScript to build websites and use GitHub for uploading.</p>
-    <h3>Github upload</h3>
-    <h3>Github update</h3>
+    <h2>Github upload</h2>
+    <ol>
+        <h3>Create a new GitHub repository</h3>
+        <li>
+            Open the <a href="https://github.com/">GitHub website</a> and log in.
+        </li>
+        <li>
+            Add a new repository.
+            <br><img src="../source/github_upload_2.png" alt="new repository">
+        </li>
+        <li>
+            Fill in the repository name and select the public <strong>or</strong> private repository. (also can add a description and REAMDME file)
+            <br><img src="../source/github_upload_3.png" alt="add repository name">
+        </li>
+        <h3>Upload files to the repository</h3>
+        <li>
+            Upload files on the GitHub webpage or open the command line window and direct to the project directory.
+            <br><img src="../source/github_upload_4.png" alt="GitHub upload files">
+        </li>
+        <li>
+            Add <strong>git init</strong> to initiate the git repository.
+            <br><img src="../source/github_update_6.png" alt="initiate the git repository">
+        </li>
+        <li>
+            Add <strong>git remote add origin https://github.com/your-username/your-repository.git</strong> to connect the local repository to the GitHub repository.
+        </li>
+        <li>
+            Add <strong>git add .</strong> to add the file to the staging area.
+        </li>
+        <li>
+            Add <strong>git commit -m"my upload description"</strong> to commit the file.
+            <br><img src="../source/github_update_5.png" alt="commit the file">
+        </li>
+        <li>
+            Add <strong>git push -u origin master</strong>to upload the file to the GitHub repository. (check the default branch name is master or main)
+        </li>
+
+    </ol>
+    <h2>Github update</h2>
     <ol>
         <li>
-            Use hotkey <strong>win+R</strong> to open the run window, enter <strong>cmd</strong> to open the command line window.
+            Use hotkey <strong>Win+R</strong> to open the run window, enter <strong>cmd</strong> to open the command line window.
             <br><img src="../source/github_update_1.png" alt="the command line window">
         </li>
         <li>
@@ -33,8 +70,8 @@
         </li>
         <li>
             Add <strong>git push origin master</strong> to upload the file to the GitHub repository. (check the default branch name is master or main)
+            <br><img src="../source/github_update_6.png" alt="upload the file to the GitHub repository">
         </li>
-    
     </ol>
     <footer>
         <a href="../source/ai.txt"></a>

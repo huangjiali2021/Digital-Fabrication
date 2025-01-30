@@ -8,79 +8,102 @@
      <link rel="stylesheet" href="../CSS/style.css" />
  </head>
  <body>
-    <header>
-        <h1>02 Media Optimization and Copyright</h1>
-    </header>
-    <main>
-        <p>Nowadays, the form and content of web pages are very diverse, project files can be embedded within the text, images, video, links, code and other resources, images are generally png, jpg, webp and other formats, of which webp is very adaptable to the web page side, png can be a transparent channel, jpg is more general, video is usually mp4 format, there are other formats such as GIF, etc., and now the development of the web page usually use html, css, javascript are used for text frames, graphic styles and dynamic interactions respectively.</p>
-        <h2>Version2.0 -- Ffmpeg</h2>
-        <p>I use <a href="https://www.gyan.dev/ffmpeg/builds/"><strong>ffmpeg</strong></a>, a multi-media processing command-line tool library,</p> to compress the video/image and convert its format.
-        <p>I add ffmpeg in environment variables so that I can run ffmpeg directly in command line(cmd).</p>
-        <h3>Image Optimization</h3>
-        <strong>Convert png to jpg</strong>
-        <p>Add <strong>ffmpeg -i my/photo/direction converted/photo/direction</strong>, I drag the file in cmd to get the file path automatically</p>
-        <img src="../source/v1_img_1.png" alt="convert png format to jpg in cmd">
-        <strong>compress-image</strong>
-        <p>Add <strong>ffmpeg -i my/photo/direction -q:v 5 converted/photo/direction</strong>, -q:v 2 to -q:v 31, the number bigger, the quality lower.</p>
-        <img src="../source/v1_img_2.png" alt="compress image in cmd">
-        <p>compress-image from 12.4MB to 223KB</p>
-        <img src="../source/My portrait photo_1.jpg" alt="my compressed portrait photo">
-        <h3>Video Optimization</h3>
-        <strong>cut the video in 10s.</strong>
-        <p>Add <strong>ffmpeg -i my/file/direction -ss 00:00:00: -to 00:00:10 -c copy my/cutted/file/direction</strong></p>
-        <img src="../source/v1_video_1.png" alt="cut my video in cmd">
-        <strong>compress-video</strong>
-        <p>Add <strong>ffmpeg -i my/file/direction -b:v 1000k -c:a aac -b:a 128k my/compressed/file/direction</strong></p>
-        <img src="../source/v1_video_2.png" alt="compress video in cmd">
-        <p>compress video from 95.2MB,1:45Mins to 330KB,0:10Mins.</p>
-        <video src="../source/Lotus_1.mp4" type="video/mp4" controls></video>
-        <br>
-        <hr>
-        <br>
-        <h2>Version1.0 -- Online Tools</h2>
-        <h3>Image Optimization</h3>
-            <img src="../source/My portrait photo.webp" alt="My portrait photo">
-            <p>Optimized image parameters:</p>
-
-            <dl>
-                <dt>Image tool</dt>
-                <dd><a href="https://imageresizer.com/">imageresizer</a></dd>
-                <dt>Image size</dt>
-                <dd>1920px</dd>
-                <dt>Image compression</dt>
-                <dd>28%</dd>
-                <dt>File size</dt>
-                <dd>100kB</dd>
-            </dl>
-            <p>I used imageresizer converting the image from a 6.36MB JPG format to a 100KB WebP format. Image Resizer-The best online image resizer to resize your images at the highest quality. This cloud-hosted, highly scalable tool can resize your images within seconds! Simply upload your image and enter a target size. It's as easy as that! ImageResizer.com is browser-based (no software to install). It works on any platform (Windows, Linux, Mac). Your images are uploaded via a secure 256-bit encrypted SSL connection and deleted automatically within 6 hours. Since 2012 they
-                0 have resized millions of images for free! There is no software to install, registrations, or watermarks.
-            </p>
-
+    <div class="container">
+        <header>
+            <h1>02 Media Optimization and Copyright</h1>
+        </header>
+        <main>
+            
+            <p>Nowadays, the form and content of web pages are very diverse, project files can be embedded within the text, images, video, links, code and other resources, images are generally png, jpg, webp and other formats, of which webp is very adaptable to the web page side, png can be a transparent channel, jpg is more general, video is usually mp4 format, there are other formats such as GIF, etc., and now the development of the web page usually use html, css, javascript are used for text frames, graphic styles and dynamic interactions respectively.</p>
+            <h2>Version2.0 -- Ffmpeg</h2>
+            <p>I use <a href="https://www.gyan.dev/ffmpeg/builds/"><strong>ffmpeg</strong></a>, a multi-media processing command-line tool library,</p> to compress the video/image and convert its format.
+            <p>I add ffmpeg in environment variables so that I can run ffmpeg directly in command line(cmd).</p>
+            
+            <h3>Image Optimization</h3>
+            <ol>
+                <li>
+                    <p><strong>Convert png to jpg</strong></p>
+                    <p>Add <strong>ffmpeg -i my/photo/direction converted/photo/direction</strong>, I drag the file in cmd to get the file path automatically</p>
+                    <img src="../source/v1_img_1.png" alt="convert png format to jpg in cmd">
+                </li>
+                <li>
+                    <p><strong>Compress-image</strong></p>
+                    <p>Add <strong>ffmpeg -i my/photo/direction -q:v 5 converted/photo/direction</strong>, -q:v 2 to -q:v 31, the number bigger, the quality lower.</p>
+                    <img src="../source/v1_img_2.png" alt="compress image in cmd">
+                </li>
+                <li>
+                    <p>Compress-image from 12.4MB to 223KB</p>
+                    <img src="../source/My portrait photo_1.jpg" alt="my compressed portrait photo">
+                </li>
+            </ol>
+            
             <h3>Video Optimization</h3>
+                <Ol>
+                    <li>
+                        <p><strong>cut the video in 10s.</strong></p>
+                        <p>Add <strong>ffmpeg -i my/file/direction -ss 00:00:00: -to 00:00:10 -c copy my/cutted/file/direction</strong></p>
+                        <img src="../source/v1_video_1.png" alt="cut my video in cmd">
+                    </li>
+                    <li>
+                        <p><strong>compress-video</strong></p>
+                        <p>Add <strong>ffmpeg -i my/file/direction -b:v 1000k -c:a aac -b:a 128k my/compressed/file/direction</strong></p>
+                        <img src="../source/v1_video_2.png" alt="compress video in cmd">
+                    </li>
+                    <li>
+                        <p>Compress video from 95.2MB,1:45Mins to 330KB,0:10Mins.</p>
+                        <video src="../source/Lotus_1.mp4" type="video/mp4" controls></video>
+                    </li>
+                </Ol>
 
-            <video src="../source/Lotus.mp4" type="video/mp4" controls></video>
+            <br><br><br>
+            <hr>
+            <br>
 
-            <p>Optimized video parameters:</p>
-
-            <dl>
-                <dt>Video tool</dt>
-                <dd><a href="https://www.flexclip.com/cn/tools/compress-video/">flexclip</a></dd>
-                <dt>Video length</dt>
-                <dd>10 seconds</dd>
-                <dt>Frame rate</dt>
-                <dd>24fps (frames per second)</dd>
-                <dt>Video size</dt>
-                <dd>720p, HD</dd>
-                <dt>video compression</dt>
-                <dd>10%</dd>
-                <dt>File size</dt>
-                <dd>811KB</dd>
-            </dl>
-            <p>I used PR to cut out 10 seconds of a two-minute video, totalling 12MB, and then used the FlexClip website to compress the video online, totalling 811KB FlexClip-This video compression tool supports many formats such as, MP4, MOV, M4V and so on. Don't worry about privacy and security. They don't get access to your uploaded video files. It is completely free to use their compressed video. There will be no watermark on the compressed video as well. At the same time, Adobe's PR software as a professional video processing software is very good, he can complete a number of composite tasks such as editing, compression, etc., very suitable for professionals. </p>
-            <p>It is unethical to put creators' creations into the AI big model database regardless of their wishes, and AI-generated content that is indistinguishable from human-generated content or facts will result in a huge loss to human civilisation, I support badging human-generated content and letting the creators decide whether or not their own creations will be allowed to be assimilated by the AI.</p>
-            <p>I have specified the copyright in the footer, applied for the 'authored by human' badge from the <a href="https://notbyai.fyi/">Not By AI — Add the Badge to Your Human-Created Content</a> website, and downloaded the ai.txt from <a href="https://site.spawning.ai/spawning-ai-txt#ai-text-generator">Spawning's ai.txt Generator</a> website, which selectively restricts the use of your site's content for commercial AI training.</p>
-
-    </main>
+            <h2>Version1.0 -- Online Tools</h2>
+            <h3>Image Optimization</h3>
+                <img src="../source/My portrait photo.webp" alt="My portrait photo">
+                <p>Optimized image parameters:</p>
+    
+                <dl>
+                    <dt>Image tool</dt>
+                    <dd><a href="https://imageresizer.com/">imageresizer</a></dd>
+                    <dt>Image size</dt>
+                    <dd>1920px</dd>
+                    <dt>Image compression</dt>
+                    <dd>28%</dd>
+                    <dt>File size</dt>
+                    <dd>100kB</dd>
+                </dl>
+                <p>I used imageresizer converting the image from a 6.36MB JPG format to a 100KB WebP format. Image Resizer-The best online image resizer to resize your images at the highest quality. This cloud-hosted, highly scalable tool can resize your images within seconds! Simply upload your image and enter a target size. It's as easy as that! ImageResizer.com is browser-based (no software to install). It works on any platform (Windows, Linux, Mac). Your images are uploaded via a secure 256-bit encrypted SSL connection and deleted automatically within 6 hours. Since 2012 they
+                    0 have resized millions of images for free! There is no software to install, registrations, or watermarks.
+                </p>
+    
+                <h3>Video Optimization</h3>
+    
+                <video src="../source/Lotus.mp4" type="video/mp4" controls></video>
+    
+                <p>Optimized video parameters:</p>
+    
+                <dl>
+                    <dt>Video tool</dt>
+                    <dd><a href="https://www.flexclip.com/cn/tools/compress-video/">flexclip</a></dd>
+                    <dt>Video length</dt>
+                    <dd>10 seconds</dd>
+                    <dt>Frame rate</dt>
+                    <dd>24fps (frames per second)</dd>
+                    <dt>Video size</dt>
+                    <dd>720p, HD</dd>
+                    <dt>video compression</dt>
+                    <dd>10%</dd>
+                    <dt>File size</dt>
+                    <dd>811KB</dd>
+                </dl>
+                <p>I used PR to cut out 10 seconds of a two-minute video, totalling 12MB, and then used the FlexClip website to compress the video online, totalling 811KB FlexClip-This video compression tool supports many formats such as, MP4, MOV, M4V and so on. Don't worry about privacy and security. They don't get access to your uploaded video files. It is completely free to use their compressed video. There will be no watermark on the compressed video as well. At the same time, Adobe's PR software as a professional video processing software is very good, he can complete a number of composite tasks such as editing, compression, etc., very suitable for professionals. </p>
+                <p>It is unethical to put creators' creations into the AI big model database regardless of their wishes, and AI-generated content that is indistinguishable from human-generated content or facts will result in a huge loss to human civilisation, I support badging human-generated content and letting the creators decide whether or not their own creations will be allowed to be assimilated by the AI.</p>
+                <p>I have specified the copyright in the footer, applied for the 'authored by human' badge from the <a href="https://notbyai.fyi/">Not By AI — Add the Badge to Your Human-Created Content</a> website, and downloaded the ai.txt from <a href="https://site.spawning.ai/spawning-ai-txt#ai-text-generator">Spawning's ai.txt Generator</a> website, which selectively restricts the use of your site's content for commercial AI training.</p>
+    
+        </main>
+    </div>
     <footer>
         <a href="../source/ai.txt"></a>
         <img src="../source/Authored-By-Human-Not-By-AI-Badge-white.png" alt="Authored-By-Human-Not-By-AI-Badge">

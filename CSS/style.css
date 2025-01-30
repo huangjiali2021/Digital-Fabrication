@@ -1,3 +1,22 @@
+.container img {
+  width:60%;
+  height:auto;
+}
+
+video{
+  width:60%;
+  height:auto;
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* 禁止水平滚动条 */
+  scroll-behavior: smooth;/*平滑滚动*/
+}
+
 nav a{
     text-decoration: none;
   }

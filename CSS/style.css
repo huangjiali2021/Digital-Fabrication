@@ -1,33 +1,59 @@
-.container {
-  display: flex;
-  flex-direction: row;
+
+img:not(#badge){
+  width: 60vw;
 }
-.container img {
-  width:60%;
-  height:auto;
-}
+
+
 
 video{
-  width:60%;
-  height:auto;
+  width: 60vw;
 }
 
-
-html, body {
+body {
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
-  width: 100%;
+  
+}
+
+.container {
+  display: flex;
   overflow-x: hidden; /* 禁止水平滚动条 */
   scroll-behavior: smooth;/*平滑滚动*/
 }
 
-nav a{
-    text-decoration: none;
-  }
+#sidebar-container {
+  width: 200px;
+  background-color: #333;
+  color: white;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+}
 
-.leftnav{
-    display: flex;
-    flex-direction: column;
+.leftnav {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.leftnav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+}
+
+.submenu {
+  display: none; /* 默认隐藏二级菜单 */
+  padding-left: 10px;
+}
+
+.content {
+  margin-left: 220px;
+  padding: 20px;
+  flex-grow: 1;
 }
   
 footer{
@@ -39,22 +65,30 @@ footer{
 
 h1{
   font-size: 3vw;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 h2 {
   margin: 0;
   font-size: 2.2vw;
-  font-family: Arial, Helvetica, sans-serif;
+
 }
 
 
 h3 {
   font-size: 1.4vw;
-  font-family: Arial, Helvetica, sans-serif;
+
 }
 
 p {
   font-size: 1.2vw;
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+h5 {
+  margin: 0;
+  font-size: 1vw;
+}
+
+h6 {
+  margin: 0 1vw 0 0;
+  font-size: 0.9vw;
 }

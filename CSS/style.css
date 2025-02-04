@@ -30,6 +30,8 @@ nav a:hover{
   }
 
 .leftnav{
+  position: fixed;
+  top: 0;
     display: flex;
     padding: 10px;
     background-color: rgb(77, 77, 77);
@@ -39,6 +41,9 @@ nav a:hover{
 .leftnav a{
   color: rgb(255, 255, 255);
   margin: 1vw 10vw;
+}
+.rightcontent{
+  margin-top: 5vw;
 }
 
 footer{

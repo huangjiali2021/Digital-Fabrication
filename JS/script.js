@@ -1,12 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
-    fetch('../leftnav.html')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('文件加载失败: ' + response.status);
-            }
-            return response.text();
-        })
+    fetch('https://api.github.com/repos/huangjiali2021/Digital-Fabrication/contents/leftnav.html')
+        .then(response => response.text())
         .then(data => {
+            // GitHub API 返回的文件内容是经过base64编码的
+            const content = atob(data.content); // 解码base64内容
             document.getElementById('sidebar-container').innerHTML = data;
 
             // 左侧导航栏加载完成后绑定点击事件

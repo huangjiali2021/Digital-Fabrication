@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
             });
 
             document.getElementById("about").addEventListener("click", function() {
-                loadContent("../about.html");
+                loadContent("about.html");
             });
 
             document.getElementById("week1").addEventListener("click", function() {

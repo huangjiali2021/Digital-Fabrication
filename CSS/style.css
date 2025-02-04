@@ -1,5 +1,5 @@
 .container{
-     padding: 0 10vw;
+     padding: 0 12vw;
 }
 
 .container img {
@@ -32,18 +32,18 @@ nav a:hover{
 .leftnav{
   position: fixed;
   top: 0;
-    display: flex;
-    padding: 10px;
-    background-color: rgb(77, 77, 77);
+  display: flex;
+  padding: 0.5vw;
+  background-color: rgb(77, 77, 77);
 
 }
   
 .leftnav a{
   color: rgb(255, 255, 255);
-  margin: 1vw 10vw;
+  margin: 0 10vw;
 }
 .rightcontent{
-  margin-top: 5vw;
+  margin-top: 3vw;
 }
 
 footer{

@@ -1,6 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
     fetch('../leftnav.html')
-        .then(response => response.text())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('文件加载失败: ' + response.status);
+            }
+            return response.text();
+        })
         .then(data => {
             document.getElementById('sidebar-container').innerHTML = data;
 
@@ -17,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
             });
 
             document.getElementById("about").addEventListener("click", function() {
-                loadContent("about.html");
+                loadContent("../about.html");
             });
 
             document.getElementById("week1").addEventListener("click", function() {

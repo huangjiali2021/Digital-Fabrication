@@ -16,7 +16,8 @@ body {
 
 .container {
   display: flex;
-
+  overflow-x: hidden; /* 禁止水平滚动条 */
+  scroll-behavior: smooth;/*平滑滚动*/
 }
 
 #sidebar-container {

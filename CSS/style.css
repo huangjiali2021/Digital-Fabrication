@@ -24,8 +24,13 @@ nav a{
 .leftnav{
     display: flex;
     flex-direction: column;
+
 }
   
+.leftnav a{
+  margin: 0.5vw;
+}
+
 footer{
   display: flex;
   align-items: center;

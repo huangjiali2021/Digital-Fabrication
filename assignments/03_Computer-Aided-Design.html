@@ -14,11 +14,29 @@
             </header>
             <main>
                 <h2>VR machine glove</h2>
-                <p>I use <a href="https://www.freecad.org/index.php">FreeCAD</a> to model my VR machine glove parts.</p>
+                <p>I use <a href="https://www.freecad.org/index.php">FreeCAD</a> to model my VR machine glove parts so that I can 3D print it later and embed sensors in it to do force feedback test.</p> 
+                <p>As a 3D artist who used to use Blender frequnently, I think it's quit defferent compared to the precise modeling with freeCAD, I have to firstly draw a sketch with detailed data to plan the length of every line properly, and it's very unconvernient to model in freeCAD becaurse most operations can only be performed on the sketch using button and hotkeys, unlike Blender, directly edit on the 3D model (such as scaling, rotating the model, or editing points, edges and faces) is not possible.</p>
                 <h3>concept</h3>
+                <p>I use <strong>Midjourney</strong> to generate the basic appearance of the gloves.</p>
+                <h3>Sketch</h3>
                 <h2>Practice</h2>
-                <p>I follow a <a href="https://www.bilibili.com/video/BV1J5411e7Pg?spm_id_from=333.788.videopod.episodes&vd_source=44ee6375fcb513dd731f7d0da1aca23f&p=2">tutorial</a> to model a table in freeCAD so that I can familiar with the interface and basic component.</p>
-                <img src="../source/cad_practice_1.png" alt="table modeling in freeCAD">
+                <ol>
+                    <p>I follow a <a href="https://www.bilibili.com/video/BV1J5411e7Pg?spm_id_from=333.788.videopod.episodes&vd_source=44ee6375fcb513dd731f7d0da1aca23f&p=2">tutorial</a> to model basic some stuff in freeCAD so that I can familiar with the interface, basic component, and convertion from sketch to 3D (compared with directly edit the 3d model).</p>
+                    <li>
+                        <p>I use <strong>horizontal distance constraint</strong>, <strong>vertical distance constraint</strong> and <strong>distance constraint</strong> to constrain the width(50mm) and length(100mm) of the desktop, so its precise length can't be easily changed. Because I also need to model 4 table legs, the model centering is the best, so I select two table diagonal points and the center point, and use<strong>constrain symmetric</strong> to align them symmetrically. After constrain this model's length and axis position the <strong>solver messages</strong> will show "fully constrained".</p>
+                        <p>I also use <strong>create external geometry</strong> to add the table edge with the desktop leg sketch, so that I can constrain the distance between the table leg and desktop edge. </p>
+                        <p>At last, I use <strong>pad</strong> and edit the pad length to 3mm to make it 3D.</p>  
+                        <img src="../source/cad_practice_1.png" alt="table modeling in freeCAD">
+                    </li>
+                    <li>
+                        <p>I use <strong>create polyline</strong> to model some more complex stuff.</p>
+                        <p>At first, I delete all the constraints so that I can edit it freely.</p>
+                        <img src="../source/cad_practice_2.png" alt="tangent constraint and perpendicular constraint">
+                        <p>Then I applied constraints such as <strong>tangent constraint</strong>, <strong>paralle constraint</strong>, <strong>equal constraint</strong>, <strong>perpendicular constraint</strong>, <strong>distance constraint</strong> and <strong>coincident constraint</strong> to it uniformly, after the <strong>solver messages</strong> show "fully constrained", the sketch become totally precise and ready to pad to 3D.</p>
+                        <img src="../source/cad_practice_3.png" alt="finished sketch">
+                        <img src="../source/cad_practice_4.png" alt="finished 3d model">
+                    </li>
+                </ol>
             </main>
     </div>
     <footer>

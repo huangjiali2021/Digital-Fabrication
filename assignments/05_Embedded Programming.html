@@ -18,6 +18,21 @@
                 <p>A microcontroller(MCU) is a small, low-cost computer integrated into a single chip, designed to control electronic devices. It consists of a processor(CPU), memory(RAM and flash storage), and input/output peripherals(e.g., GPIP pins, timers, and communication interfaces). MCUs are commonly used in embedded systems, where they provide specific functionality for various applications.</p>
                 <p>Microcontroller can be used in creating robotics, home automation systems, wearables, sensors, and IoT devices. With an MCU, you can control motors, reader sensors, process data, and communicate with other devices. Popular examples include Arduino, Raspberry Pi Pico, and ESP32. </p>
                 <h2>Electronic concept</h2>
+                <p>Voltage, current, and resistance are fundamental concepts in electronics, often described by Ohm's law.</p>
+                <p>Voltage(V) is the electric potential difference between two points. It is the force that pushes electric charges to move in a circuit, measured in volts(V).</p>
+                <p>Current(I) is the flow of electric charges(usually electrons) through a conductor, such as a wire. It is measures in amperes(A).</p>
+                <p>Resistence(R) is the opposition to teh flow of current in a circuit, caused br materials or components like resistor. It is measured in ohms (Ω).</p>
+                <p>These three quantities are related by Ohm's law, which states: V = I * R.</p>
+                <h2>XIAO board</h2>
+                <p>Safty: Prepare the tools: soldering iron, soldering wire, a damp sponge for cleaning the iron, and saftey equipment like goggles and a well-ventilated workspace. Open the ventilation equipment to absorb toxic gas, keep the solder pen in hand or on the pen holder to avoid its heat hurt the table stuff, after done the solder, its essential to close the power supply. Keep the solder element apart.</p>
+                <img src="../source/week5_01.jpg" alt="solder picture">
+                <h2>Arduino</h2>
+                <p>#define is used to define constants or macros that can be used throughout the code. For exampple, #define LED_PIN 13 assigns pin 13 to the constant LED_PIN.</p>
+                <p>setup() runs once since the Arduino resets or starts. It is used to initialize settings, such as setting pin modes or starting serial communication.</p>
+                <p>loop() runs repeatedly. It contains the main code that needs to run over and over, like reading sensors or controlling outputs.</p>
+                <p>pinMode() sets the mode of a pin, either as an input or outout. For example, pinMode(LED_PIN, OUTPUT) set the pin as an output.</p>
+                <p>digitalWrite() can writes a HIGH or LOW value to a pin, used to control outputs like LEDs.</p>
+                <h2>NEOPIXEL</h2>
             </main>
     </div>
     <footer>

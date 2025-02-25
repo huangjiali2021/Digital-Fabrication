@@ -24,7 +24,9 @@
                 <p>Resistence(R) is the opposition to teh flow of current in a circuit, caused br materials or components like resistor. It is measured in ohms (Ω).</p>
                 <p>These three quantities are related by Ohm's law, which states: V = I * R.</p>
                 <h2>XIAO board</h2>
-                <p>Safty: Prepare the tools: soldering iron, soldering wire, a damp sponge for cleaning the iron, and saftey equipment like goggles and a well-ventilated workspace. Open the ventilation equipment to absorb toxic gas, keep the solder pen in hand or on the pen holder to avoid its heat hurt the table stuff, after done the solder, its essential to close the power supply. Keep the solder element apart.</p>
+                <p>When soldering the pins onto the XIAO board, the tools you will need include a soldering iron, solder wire, a damp sponge for cleaning the soldering iron, and possibly safety goggles. Make sure the soldering iron has heated up to the appropriate temperature (around 350°C) before starting. Place the pins on the board, ensuring they are aligned, and then simultaneously heat the pins and the pads on the board. After that, apply the solder. Avoid touching the hot tip of the soldering iron, and use tweezers or pliers to hold the board while working to prevent burns.
+
+                    For safety, we need to work in a well-ventilated area or use a smoke extractor to avoid inhaling harmful gases. Keep the soldering iron away from flammable materials, and ensure the work surface is clean and stable. Once finished, wait for the board to cool down before handling it.</p>
                 <img src="../source/week5_01.jpg" alt="solder picture">
                 <h2>Arduino</h2>
                 <p>#define is used to define constants or macros that can be used throughout the code. For exampple, #define LED_PIN 13 assigns pin 13 to the constant LED_PIN.</p>
@@ -32,10 +34,12 @@
                 <p>loop() runs repeatedly. It contains the main code that needs to run over and over, like reading sensors or controlling outputs.</p>
                 <p>pinMode() sets the mode of a pin, either as an input or outout. For example, pinMode(LED_PIN, OUTPUT) set the pin as an output.</p>
                 <p>digitalWrite() can writes a HIGH or LOW value to a pin, used to control outputs like LEDs.</p>
+                <p>Variables: Arduino supports different types like int, float, and char to store data.</p>
+                <p>if...else: These conditional statements allow the code to make decisions. For example, if (condition) {} runs a block if true, otherwise, else {} runs.</p>
                 <h2>NEOPIXEL</h2>
                 <p>I learned how to start Seeed XIAO RP2040 <a href="https://wiki.seeedstudio.com/XIAO-RP2040-with-Arduino/">here</a> (connect/ install/ choose the board and port). Then I use example in this website to apply the library. </p>
                 <img src="../source/week5_02.png" alt="example">
-                <video src="../source/week5_03.mp4"></video>
+                <video src="../source/week5_03.mp4" type="video/mp4" controls></video>
                 <p>The Adafruit_NeoPixel object is initialized with the number of pixels, the pin used, and the color format (NEO_GRB + NEO_KHZ800), which specifies the color order and communication speed.
                     The setup() function initializes the NeoPixel and sets up the power pin to provide voltage to the LED. Inside the loop(), various colors are set for the NeoPixel with setPixelColor(), followed by a delay() to display each color for 400 milliseconds. The show() function sends the color data to the LED, and clear() resets it.</p>
             </main>

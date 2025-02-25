@@ -21,18 +21,18 @@
                 <p>Laser Waist: This refers to the point where the laser beam is at its narrowest, resulting in the highest energy density. </p>
                 <p>Laser Focus: This is the process of adjusting the laser beam to focus on the material's surface, ensuring optimal cutting performance.</p>
                 <p>Kerf: The width of the cut made by the laser beam. Understanding kerf is crucial for precise design adjustments, as it affects the final dimensions of the cut piece.</p>
-                <p>Laser cutting machines operate by focusing a high-powered laser beam onto the material's surface, causing it to melt, burn, or vaporize, resulting in a cut. These terms are important because they influence the cutting quality and precision. Properly managing the laser waist and focus ensures efficient energy use and optimal cut quality. Accounting for kerf is essential in design to achieve accurate final dimensions.</p>
+                <p>These terms are important because they influence the cutting quality and precision. Properly managing the laser waist and focus ensures efficient energy use and optimal cut quality. Accounting for kerf is essential in design to achieve accurate final dimensions.</p>
                 <h2>Project</h2>
                 <p>I use laser cutting to design a Newton's Cradle.</p>
                 <p>At first, I model 7 parts in freeCAD. (padding every sketch to 3D.) Try to see the parts I'm going to assemble in a more concret way, avoid set the wrong parameter leading to assembly issues.</p>
                 <img src="../source/week4_01.png" alt="freeCAD model">
-                <p>I use spreadsheet to set the parameters/Alias and use them repeatly in sketch, so that if I want to change sketch length like material thickness, I only need to change the parameter in spreadsheet, it will change all the length that use this parameter.</p>
+                <p>The sketches of each part use detailed dimensional constraints and fit parameters to ensure they can be accurately inserted and connected. To simplify subsequent modifications, I created a spreadsheet that contains all the key dimensions, such as material thickness. This way, I can easily change parameters, like altering the material thickness, and all related part dimensions will automatically update.</p>
                 <img src="../source/week4_02.png" alt="spreadsheet">
-                <p>Then, I switch to TechDraw mode and insert view from the pad model, and I export svg to start the laser cutting.</p>
+                <p>During the laser cutting stage, I use the TechDraw workbench in FreeCAD to generate blueprints and export them in SVG format to fit the laser cutter. I ensure that each cut is precise to avoid any errors.</p>
                 <img src="../source/week4_03.png" alt="blue print/ drawing">
                 <p>Make sure every step of the laser cutting is done well, then wait it finished.</p>
                 <img src="../source/week4_04.jpg" alt="real object">
-                <p>After it was finished, I just assemble it, becaurse the material thinckness is 2mm, which is too thin to insert each other, so I use glue to secure the model. Also, the kerf seems didn't work, I need to use much force to make my internal cutting parts insert each other.</p>
+                <p>After it was finished, I just assemble it, becaurse the material thinckness is 2mm, some part of it is unable to maintain a stable mutual insertion state, so I use glue to secure the model. Also, the kerf seems didn't work, I need to use much force to make my internal cutting parts insert each other.</p>
                 <img src="../source/week4_05.jpg" alt="assembled model">
                 <p>The box of the model wasn't assembled very well because when I set the dimensions, I relied solely on imagination. As a result, the side panels of the box were difficult to fit in due to missing the dimensions of other parts, such as the side and front panels. Later, I need to first build it in FreeCAD's Part Design mode or use Boolean operations to directly create the recessed and protruding shapes, so the box can close perfectly.</p>
                 <p><a href="../source/week4_freecad.zip">Here</a> is the freeCAD file of the project I mentioned.</p>

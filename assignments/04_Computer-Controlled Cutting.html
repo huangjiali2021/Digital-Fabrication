@@ -14,14 +14,15 @@
                 <h1>04 Computer-Controlled Cutting</h1>
             </header>
             <main>
-                <h2>Introduction</h2>
-                <p>Vinyl Cutting: Employ a sharp blade to cut thin materials like PVC vinyl, commonly used for creating stickers, signs, and wall decals (ideal for 2D design but limited for soft material and complex 3D cuts.)</p>
-                <p>Waterjet Cutting: Use high-pressure water(sometimes mix with abrasives) to cut through materials like metals, stones, ceramics and glass, it is slower than laser cutting but can handle different thickness of materials.</p>
-                <p>Laser Cutting: Uses a high-powered laser beam to melt or vaporize material, achieving precise cuts. Laser cutting is suitable for metals, plastics, wood, and paper. However, it may not be ideal for very thick materials and can be limited by the material's reflectivity. </p>
-                <p>Laser Waist: This refers to the point where the laser beam is at its narrowest, resulting in the highest energy density. </p>
-                <p>Laser Focus: This is the process of adjusting the laser beam to focus on the material's surface, ensuring optimal cutting performance.</p>
-                <p>Kerf: The width of the cut made by the laser beam. Understanding kerf is crucial for precise design adjustments, as it affects the final dimensions of the cut piece.</p>
-                <p>These terms are important because they influence the cutting quality and precision. Properly managing the laser waist and focus ensures efficient energy use and optimal cut quality. Accounting for kerf is essential in design to achieve accurate final dimensions.</p>
+                <h2>Introduction: Computer-controlled Cutting</h2>
+                <p>Vinyl Cutting: Uses a sharp blade to cut 2D materials like PVC. It always used for making stuff like stickers, signs, and wall decals(mostly 2D design). Thick material like 3D stuff is not suitable to use this technology.</p>
+                <p>Waterjet Cutting: Uses a high-pressure stream of water(or mixed with abrasives) to cut through different thickness material( like metals, stone, ceramics, and glass). It's slow compared to other computer-controlled cutting method, but it is suitable for many different thickness and types of material, and the precision is also very good. </p>
+                <p>Laser Cutting: Uses a high-powered laser beam to melt material with limited thickness(suitable). It's precise and fast. material is mostly like metals, plastics, wood, and paper. But it struggles with some materials whicth too reflective.</p>
+                <h2>Introduction: Laser Cutter</h2>
+                <p>Laser Waist: It's like pen lip, the highest energy density of the laser beam. </p>
+                <p>Laser Focus: Like the camera focus, it is the place of the cutting material that the laser beam focus on.</p>
+                <p>Kerf: Laser cutter is not cutting stuff without wastage, the kerf is the width that the laser melting.</p>
+                <p>These terms will influence the cutting quality and precision. Properly managing the laser waiste and focus ensures efficient energy use and optimal cut quality. Accounting for kerf is essential if you want to make two parts joined together successfully.</p>
                 <h2>Project</h2>
                 <p>I use laser cutting to design a Newton's Cradle.</p>
                 <p>At first, I model 7 parts in freeCAD. First, I use the sketch tool to draw the outline of each part, ensuring that the sockets and protrusions of the parts fit with other parts. Then, by using the mating relationships and dimensional constraints of the parts, I ensure the tightness and range of motion between the parts. (padding every sketch to 3D) Try to see the parts I'm going to assemble in a more concret way, avoid set the wrong parameter leading to assembly issues. </p>
@@ -32,7 +33,7 @@
                 <img src="../source/week4_03.png" alt="blue print/ drawing">
                 <p>Make sure every step of the laser cutting is done well, then wait it finished.</p>
                 <img src="../source/week4_04.jpg" alt="real object">
-                <p>After it was finished, I just assemble it, becaurse the material thinckness is 2mm, some part of it is unable to maintain a stable mutual insertion state, so I use glue to secure the model. Also, the kerf seems didn't work, I need to use much force to make my internal cutting parts insert each other.</p>
+                <p>After it was finished, I just assemble it, because the material thinckness is 2mm, some part of it is unable to maintain a stable mutual insertion state, so I use glue to secure the model. Also, the kerf seems didn't work, I need to use much force to make my internal cutting parts insert each other.</p>
                 <img src="../source/week4_05.jpg" alt="assembled model">
                 <p>The box of the model wasn't assembled very well because when I set the dimensions, I relied solely on imagination. As a result, the side panels of the box were difficult to fit in due to missing the dimensions of other parts, such as the side and front panels. Later, I need to first build it in FreeCAD's Part Design mode or use Boolean operations to directly create the recessed and protruding shapes, so the box can close perfectly.</p>
                 <p><a href="../source/week4_freecad.zip">Here</a> is the freeCAD file of the project I mentioned.</p>

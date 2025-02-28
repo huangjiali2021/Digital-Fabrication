@@ -18,15 +18,16 @@
                 <p>I use <a href="https://www.freecad.org/index.php">FreeCAD</a> to model my VR machine glove parts so that I can 3D print it later and embed sensors in it to do force feedback test.</p> 
                 <p>As a 3D artist who used to use Blender frequnently, I think it's quit defferent compared to the precise modeling with freeCAD, I have to firstly draw a sketch with detailed data to plan the length of every line properly, and it's very unconvernient to model in freeCAD becaurse most operations can only be performed on the sketch using button and hotkeys, unlike Blender, directly edit on the 3D model (such as scaling, rotating the model, or editing points, edges and faces) is not possible.</p>
                 <h2>Additional Notes</h2>
-                <p><strong>Degrees of Freedom in Sketches:</strong>When creating a sketch in FreeCAD, degrees of freedom (DOF) refer to the number of independent movements a shape or part can have. In FreeCAD, it's important to constrain sketches to eliminate unnecessary degrees of freedom, ensuring that the sketch is fully defined. A sketch with too many degrees of freedom can lead to errors or unexpected results when converting it to 3D.</p>
+                <p><strong>Degrees of Freedom in Sketches:</strong>It means the line or face of the shape can move in the 3D space of sketch in a unconstrained and indepandent way (X, Y, Z position and X, Y, Z rotate). If the sketch is not successfully constrained, it may let the parts cannot move or stay as expect(unstable). We must constrain the whole parts and reduce the degrees of freedom into 0, or keep specific DOF to implement expected moving(like rotation of hinge).</p>
                 <p>
-                    <strong>Tools for Creating 3D Shapes: </strong>In FreeCAD, there are various tools available to convert your 2D sketches into 3D shapes, such as:
+                    <strong>Tools for Creating 3D Shapes: </strong>Make a sketch is not enough, we should switch the mode into part design and use the tools to convert the sketch to 3D shape.
                     <ul>
-                        <li>Pad (extrudes a 2D sketch into a 3D shape),</li>
-                        <li>Revolve (creates a 3D shape by rotating a sketch around an axis),</li>
-                        <li>Loft (connects multiple sketches to create a 3D shape),</li>
-                        <li>Pocket (cuts material away from a solid),</li>
-                        <li>Fusion (combines multiple solids into one). These tools allow for precise creation of parts that can be 3D printed or used in more complex assemblies.</li>
+                        <li>Pad :extrudes the sketch to let it have editable thickness.</li>
+                        <li>Revolve: rotate the sketch around an axis, like the flower pot I made below.</li>
+                        <li>Loft: use multiple sketch(different dimension of the 3D shape) to create the 3D.</li>
+                        <li>Pocket: dig hole in the 3D shape with another sketch.</li>
+                        <li>Fillet: make the face, edge, body become round.</li>
+                        <li>PolarPattern: make the change of the shape turn around and edit the occurrences and angle.</li>
                     </ul>
                 
                 </p>
@@ -40,7 +41,7 @@
                         <img src="../source/cad_practice_1.png" alt="table modeling in freeCAD">
                     </li>
                     <li>
-                        <p>I use <strong>create polyline</strong> to model some more complex stuff. （press M can change the shape I create）</p>
+                        <p>I use <strong>create polyline</strong> to model some more complex stuff. (press M can change the shape I create)</p>
                         <p>At first, I delete all the constraints so that I can edit it freely.</p>
                         <img src="../source/cad_practice_2.png" alt="tangent constraint and perpendicular constraint">
                         <p>Then I applied constraints such as <strong>tangent constraint</strong>, <strong>paralle constraint</strong>, <strong>equal constraint</strong>, <strong>perpendicular constraint</strong>, <strong>distance constraint</strong> and <strong>coincident constraint</strong> to it uniformly, after the <strong>solver messages</strong> show "fully constrained", the sketch become totally precise and ready to pad to 3D.</p>

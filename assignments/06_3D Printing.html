@@ -15,18 +15,21 @@
             </header>
             <main>
                 <h2>Additive Manufacturing and 3D Printing</h2>
-                <p>3D printing is the same thing as additive manufacturing, which is a technology that gradually builds three-dimensional objects by layering materials based on a CAD model (Computer-Aided Design model) or a digital 3D model. Unlike traditional subtractive manufacturing (such as cutting or milling), 3D printing forms the final object by adding material layer by layer.</p>
+                <p>3D printing is the same thing as additive manufacturing, which is a technology that gradually builds three-dimensional objects by layering materials based on a CAD model (Computer-Aided Design model) or a digital 3D model. Unlike traditional subtractive manufacturing (such as cutting or milling), 3D printing forms the final object by adding material layer by layer. The common materials are plastic(most commonly) and metal, ceramic, resin, and food materials are also capable in 3D printing. It is suitable to build stuff from fast prototype to final product, which can bring much freedom in design and efficiency in production. So it always used in prototyping(design new product), medical(manufacture personalized prosthetics, dental braces, and complex surgical and implants), architecture(3D printing buildings), and automotive and aerospace(light-weighth and high-strength components)</p>
                 <h2>FDM/FFF 3D printing </h2>
                 <p><strong>FDM (Fused Deposition Modeling): </strong>Just like FFF, it heating and extruding plastic filament like PLA, ABS, PETG, etc., and depositing it layer by layer(the layer shape are so obvious so most of the time it needs polish) onto the print bed to gradually build up a 3D stuff. FDM technology is very common, especially in desktop 3D printing.</p>
                 <p><strong>FFF (Fused Filament Fabrication): </strong>FFF is also a technology that uses molten material to print layer by layer. But FDM is a trademark registered by Stratasys, while FFF is commonly used in open-source and DIY 3D printers which is free.</p>
                 <p>FDM and FFF are both under Material Extrusion(a major category of additive manufacturing). They achieve the printing process by extruding molten material.</p>
                 <h2>3D Model</h2>
                 <p>I sketch both inside and outside of the half of the pot and use Revolution to make it a full pot shape.</p>
-                <p>I create sketches to model a triangle and circle, then I use Pocket to dig the hole upon the flower pot model to ensure this model can not be easily made with any other digital fabrication process such as laser cutting or CNC milling. And I use PolarPattern to let the hole dig around the pot as a decoration.</p>
+                <p>I create sketches to model a triangle and circle, then I use Pocket to dig the hole upon the flower pot model to ensure this model can not be easily made with any other digital fabrication process such as laser cutting or CNC milling. And I use the triangle as sketch and use PolarPattern to let the triangle shape hole dig around the pot to angle as 360 degrees and occurances as 17 as a decoration. </p>
+                <p>With theses steps, I finished this smooth, perforated and stable flower pot.</p>
                 <img src="../source/week6_01.png" alt="flower pot">
                 <img src="../source/week6_02.png" alt="flower pot">
                 <h2>PrusaSlicer</h2>
-                <p>I export the model as step format. Then I download a software named PrusaSlicer and do the Configuration Sources, like choose the deposition thick and 3D printing machine we are going to use. Finally, I slice it.</p>
+                <p>I export the model as step format. Then I download a software named PrusaSlicer and do the Configuration Sources, like choose the deposition thick and 3D printing machine we are going to use. </p>
+                <p>At first, the model is 18cm tall(too big), which means it needs 4 to 5 hours to print it. It's necessary to limit the print time, so I change the size to 50% and let the print time reduce to 1.5 hours. Also, my 3D printing model is a stable flower pot, which means it can stand on the plat very stablely, so I don't need to set the supports extrally. </p>
+                <p>Finally, I solve all the problems ,slice it and export G-code to the USB drive that connected to its 3D printer.</p>
                 <img src="../source/week6_03.png" alt="PrusaSlicer">
                 <img src="../source/week6_04.jpg" alt="3D printing the flower pot">
                 <img src="../source/week6_05.jpg" alt="my beautiful flower pot on table">

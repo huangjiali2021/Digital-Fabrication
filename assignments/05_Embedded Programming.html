@@ -24,23 +24,25 @@
                 <p>Resistence(R) is to prevent short circuits in electronic devices, the resistor provides resistance in the current to reduce the voltage. It is measured in ohms (Ω).</p>
                 <p>These three quantities are related by Ohm's law, which states: V = I * R.</p>
                 <h2>XIAO board</h2>
-                <p>When soldering the pins onto the XIAO board, the tools we will need include a soldering iron, solder wire, a damp sponge for cleaning the soldering iron, and possibly safety goggles. Make sure the soldering iron has heated up to the appropriate temperature (around 350°C) before starting. Place the pins on the board, ensuring they are aligned, and then simultaneously heat the pins and the pads on the board. After that, apply the solder. Avoid touching the hot tip of the soldering iron, and use tweezers or pliers to hold the board while working to prevent burns.
-                    For safety, we need to work in a well-ventilated area or use a smoke extractor to avoid inhaling harmful gases. Keep the soldering iron away from flammable materials, and ensure the work surface is clean and stable. Once finished, wait for the board to cool down before handling it.</p>
+                <p>To make the XIAO board work as a complete board, I need to solder the pins onto the XIAO board. To do this, the fab lab prepare me tools such as soldering iron, a damp sponge(clean the soldering iron), solder wire, and safety goggles(if necessary). </p>
+                <p>Waiting until the soldering iron is up to the temperature such as 350°C and then start. Place the pins on the board and aligned them, simultaneously heat the pins and the pads on the board ,solder them. (Make sure every bump stuff seperate from each other.) In this way, we combine these two parts sturdiely.  </p>
+                <p>For safety, don't get burned(avoid touching the hot soldering iron), don't get toxic(work in a well-ventilated area or use a smoke extractor to split harmful gases). don't hurt the lab(Keep the soldering iron away from flammable materials, and ensure the work surface is clean and stable.) </p>
+                <p>Finally, waiting for the board to cool down then clean and organize everything.</p>
                 <img src="../source/week5_01.jpg" alt="solder picture">
                 <h2>Arduino</h2>
-                <p>#define is used to define constants or macros that can be used throughout the code. For exampple, #define LED_PIN 13 assigns pin 13 to the constant LED_PIN.</p>
-                <p>setup() runs once since the Arduino resets or starts. It is used to initialize settings, such as setting pin modes or starting serial communication.</p>
-                <p>loop() runs repeatedly. It contains the main code that needs to run over and over, like reading sensors or controlling outputs.</p>
-                <p>pinMode() sets the mode of a pin, either as an input or outout. For example, pinMode(LED_PIN, OUTPUT) set the pin as an output.</p>
-                <p>digitalWrite() can writes a HIGH or LOW value to a pin, used to control outputs like LEDs.</p>
-                <p>Variables: Arduino supports different types like int, float, and char to store data.</p>
-                <p>if...else: These conditional statements allow the code to make decisions. For example, if (condition) {} runs a block if true, otherwise, else {} runs.</p>
+                <p>#define is always used to define constants or macros in code. For exampple, #define LED_PIN 13 assigns pin 13 to the constant "LED_PIN".</p>
+                <p>setup() runs only once since the Arduino resets or starts. It is used to initial settings, such as setting pin modes or starting serial communication.</p>
+                <p>loop() runs repeatedly unlike setup(). It contains the main codes that needs to run over and over, like reading sensors or controlling outputs or print the data.</p>
+                <p>pinMode() sets the mode of a pin(input or outout). For example, pinMode(LED_PIN, OUTPUT) set the pin as an output.</p>
+                <p>digitalWrite() can writes a HIGH or LOW value to a pin, used to control outputs like LEDs, the example blink shows a clear usation of it.</p>
+                <p>Variables: Arduino supports different types like int, float, and char to store or use of data.</p>
+                <p>if...else: These conditional statements allow the code to make decisions, and run different execute in different situation. For example, if (condition) {} runs a block if true, otherwise, else {} runs.</p>
                 <h2>NEOPIXEL</h2>
                 <p>I learned how to start Seeed XIAO RP2040 <a href="https://wiki.seeedstudio.com/XIAO-RP2040-with-Arduino/">here</a> (connect/ install/ choose the board and port). Then I use example in this website to apply the library. </p>
+                <p>The process of the library application is already tricky for me, I need to fill Additional Boards Manager URLs in File > Preferences. Install and download the Raspberry Pico in Tools-> Board-> Boards Manager... choose the port as recommended and upload the example code in reference</p>
+                <p>I use #include <Adafruit_NeoPixel.h> to import the specific library that I'm going to use. define and initialize the color pin and pixels. and then, define the color change in loop().</p>
                 <img src="../source/week5_02.png" alt="example">
                 <video src="../source/week5_03.mp4" type="video/mp4" controls></video>
-                <p>The Adafruit_NeoPixel object is initialized with the number of pixels, the pin used, and the color format (NEO_GRB + NEO_KHZ800), which specifies the color order and communication speed.
-                    The setup() function initializes the NeoPixel and sets up the power pin to provide voltage to the LED. Inside the loop(), various colors are set for the NeoPixel with setPixelColor(), followed by a delay() to display each color for 400 milliseconds. The show() function sends the color data to the LED, and clear() resets it.</p>
             </main>
     </div>
     <footer>

@@ -17,17 +17,18 @@
                 <h2>Basics of CNC Machining</h2>
                 <p>CNC machining (computer numerical control machining) is subtractive manufacturing, where machine controlled by computers can precisely remove/ cut and shape material (like wood/ metal/ plastic/ or...) from a solid block, unlike other digital fabrication methods liek 3D printing is Additive Manufacturing (bulid layers) or laser cutting uses laser (focused light) to cut/ engrave/ milling. CNC can offer precision greater precision and material versatility.  CNC machines can be multi-axis (over 3 axis). It include various types like CNC milling, CNC turning, CNC laser cutting, and CNC EDM. CNC milling is the most common one, which always used for surface machining, contour cutting, drilling...</p>
                 <h2>Tools(end mill) in CNC</h2>
-                <p><strong>Parameters</strong>: The CNC milling tools including parameters like material, diamerter, length, cutting edge geometry, and flute numebr.</p>
+                <p><strong>Parameters</strong>: The CNC milling tools including parameters like material, diamerter, length, cutting edge geometry, flute numebr, speed and feed.</p>
                 <p><strong>Flute</strong>: For chip evacuation. It's the spiral grooves on the end mill. The cutting edge of an end mill are typically made of multiple flutes. These flutes can help with cutting and chip removal, different machining requirements need different shape and numbers of flutes. </p>
                 <p><strong>Shank and Shaft</strong>: The shank is inserted into machine spindle, which is thicker and above the shaft, providing stablility. Shaft is a cylindrical part located at the central at the tool, directly participants in cutting.</p>
                 <p><strong>Collet</strong>: A clamp that hold the end mill in the spindle, ensure the end mill be fixed and centered during operation.</p>
                 <img src="../source/week8_01.webp" alt="different end mill">
                 <h2>Feeds and Speeds</h2>
-                <p><strong>Horizontal and Vertical Feed Rate</strong>: </p>
-                <p><strong>Plunge Rate</strong>: </p>
-                <p><strong>Chip Load</strong>: </p>
-                <p><strong>Depth of Cut</strong>: </p>
-                <p><strong>Formula</strong>: </p>
+                <p>Feeds and speeds are the rate of the tools move through materials(feed) and the rotational rate of the tools(spindle speed).</p>
+                <p><strong>Horizontal and Vertical Feed Rate(Plunge Rate)</strong>: Horizontal feed rate is the rate that tools moving through horizontal(X/Y movement), while the vertical feed rate(also known as plunge rate) is the tools moving through vertical(Z movement) direction(enter the material). Both of them are measured in mm/min, e.g. 2000mm/min. Horizontal influence the cutting surface and vertical influce the cutting depth.</p>
+                <p><strong>Chip Load</strong>: It is the amount of material each cutting edge removes per revolution. These rates are linked to chip load.</p>
+                <p><strong>Depth of Cut</strong>: It is the distance the tool penetrates into the material, influencing the material removal rate.</p>
+                <p><strong>Formula 1</strong>: HF(horizontal feed rate) = NF(number of flutes) * CL (chip load)* SP(spindle speed)</p>
+                <p><strong>Formula 2</strong>: VF(vertical feed rate) = NF(horizontal feed rate) / 4</p>
                 <h2>FreeCAD + CNC</h2>
                 <h2>CNC Milling</h2>
                 

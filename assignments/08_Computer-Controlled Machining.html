@@ -30,7 +30,18 @@
                 <p><strong>Formula 1</strong>: HF(horizontal feed rate) = NF(number of flutes) * CL (chip load)* SP(spindle speed)</p>
                 <p><strong>Formula 2</strong>: VF(vertical feed rate) = NF(horizontal feed rate) / 4</p>
                 <h2>FreeCAD + CNC</h2>
+                <p>I modeled a hanger consistent of 3 parts(two hooks and one bar), I use transform of the body to move it so that I can assemble it in Part Design mode. I do it to make sure all my parts can fit each other perfectly.</p>
+                <p>Then I lay out the three pars in TechDraw mode to prepare for my CNC milling.</p>
+                <p>Spreatsheet helps it being a parametric design object. For instance, I use parameter "thick" to contral the snap together part and thickness part since I've been given a 15mm +/-0.5mm thick 120x120cm plywood sheet for its production, but the parameters can always change if there are some situation that the design doesn't fit the given board.</p>
+                <img src="../source/week8_02.png" alt="part design mode">
+                <img src="../source/week8_03.png" alt="techdraw mode">
+                <img src="../source/week8_04.png" alt="spreadsheet mode">
+                <p><a href="../source/week8_CNC.zip">Here</a> is the hanger's FreeCad file I'm talking about.</p>
                 <h2>CNC Milling</h2>
+                <p>I need to use fixture and clamps to fix the material to the machine bed, it can avoid the material from shifting or vivrating during the milling process.</p>
+                <p>I need to use VCarve to generate the tool path to control the movement and cutting of the cutting tool, during the path, it will leave some tabs as connector to keep the material(workpiece) detaching from the base or fixture while being cut.</p>
+                <p>I use CNC machine to cut the material along the designated path, carve the material into the designated shap.</p>
+                <p>After miling, remove the excess material include tabs, and then assemble these parts as freeCad part design mode.</p>
                 
             </main>
     </div>

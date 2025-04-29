@@ -46,6 +46,13 @@
                 <img src="../source/week12_06.png" alt="code">
                 <video src="../source/week12_07.mp4" type="video/mp4" controls></video>
                 <h2>Two Board Communication</h2>
+                <p>I let the two esp board both connect with a LED with Pin D10, when one of the esp board's Serial Monitor input 1, both the LED on, when one of the esp board's Serial Monitor input 0, both the LED off.</p>
+                <p>This code implements wireless communication between two ESP32 boards using the ESP-NOW protocol. By input '1' or '0' via the serial port, the sending ESP32 encapsulates the command/message within the ControlMessage struct and transmits it to the receiving ESP32 using esp_now_send(). The receiving ESP32 parses the command/message through the OnDataRecv() callback function and controls its local LED using digitalWrite(). The setup() function initializes ESP-NOW and registers the callbacks, while the loop() function listens for serial input and sends messages.</p>
+                <p>(To make the code work, I should change the receiverAddress to another esp32 board's MAC address.)</p>
+                <img src="../source/week12_11.png" alt="code">
+                <img src="../source/week12_12.png" alt="code">
+                <img src="../source/week12_13.png" alt="code">
+                <video src="../source/week12_14.mp4" type="video/mp4" controls></video>
 
             </main>
     </div>

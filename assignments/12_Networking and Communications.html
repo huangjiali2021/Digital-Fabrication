@@ -25,6 +25,7 @@
                 <p>In setup, I use WiFi.begin() with WiFi's name and password to connect with the WiFi internet. If the WiFi.status() = WL_CONNECTED, it means it connect with the WiFi successfully. </p>
                 <p>Then I use Serial.print() to print WiFi.localIP() so that I can get the IP address in Serial Monitor. And I keep the computer's WiFi as same as the EPS32C3 board's connected WiFi, than I search for the IP address which is http://WiFi.localIP() in the browser, then I can see the content I set in the arduino code.</p>
                 <p>I use server.on() to write the content. When I use browser to access the root path (/) of the ESP32C3, the server will respond with a HTTP GET request. When the server returns status code 200(it means the requst successed) the web page will show the content(the text message I write in the code)</p>
+                <p><a href="../source/week12_15.zip">code</a></p>
                 <img src="../source/week12_01.png" alt="code">
                 <img src="../source/week12_02.png" alt="print IP address">
                 <img src="../source/week12_03.png" alt="web page">
@@ -32,9 +33,11 @@
                 <p>I set  character string input in Serial Monitor to control the LED light's on and off.</p>
                 <p>I use Serial.available() to check if there are available data in Serial Monitor, if there is, Serial.read will receive the input data.</p>
                 <p>If I input 1 and send it to Serial Monitor, the Digital pin D10 will output Voltage and then the LED light status will be HIGH. If I input 0 and send it to Serial Monitor, the Digital pin D10 will output Voltage and then the LED light status will be LOW.</p>
+                <p><a href="../source/week12_16.zip">code</a></p>
                 <img src="../source/week12_04.png" alt="code">
                 <video src="../source/week12_05.mp4" type="video/mp4" controls></video>
                 <p>In this case, we can change the web address as the input to change the web page content and LED light's on and off.</p>
+                
                 <img src="../source/week12_08.png" alt="code">
                 <img src="../source/week12_09.png" alt="IP address in browser">
                 <img src="../source/week12_10.png" alt="web page">
@@ -43,12 +46,14 @@
                 <p>I connect tow terminalS(right and left side, dosen't matter the turn) with GND and 3.3V, then connect the middle one with analog pin which I choose A0.</p>
                 <p>In code, I set A0 as INPUT, then I use analogRead() to read the measured voltage and use Serial.println() to print it.</p>
                 <p>When I rotate the knob of the potentiometer, I can see the data change in Serial Plotter and Serial Monitor.</p>
+                <p><a href="../source/week12_17.zip">code</a></p>
                 <img src="../source/week12_06.png" alt="code">
                 <video src="../source/week12_07.mp4" type="video/mp4" controls></video>
                 <h2>Two Board Communication</h2>
                 <p>I let the two esp board both connect with a LED with Pin D10, when one of the esp board's Serial Monitor input 1, both the LED on, when one of the esp board's Serial Monitor input 0, both the LED off.</p>
                 <p>This code implements wireless communication between two ESP32 boards using the ESP-NOW protocol. By input '1' or '0' via the serial port, the sending ESP32 encapsulates the command/message within the ControlMessage struct and transmits it to the receiving ESP32 using esp_now_send(). The receiving ESP32 parses the command/message through the OnDataRecv() callback function and controls its local LED using digitalWrite(). The setup() function initializes ESP-NOW and registers the callbacks, while the loop() function listens for serial input and sends messages.</p>
                 <p>(To make the code work, I should change the receiverAddress to another esp32 board's MAC address.)</p>
+                <p><a href="../source/week12_18.zip">code</a></p>
                 <img src="../source/week12_11.png" alt="code">
                 <img src="../source/week12_12.png" alt="code">
                 <img src="../source/week12_13.png" alt="code">

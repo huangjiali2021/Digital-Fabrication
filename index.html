@@ -68,6 +68,10 @@
             <p>1. After pressing the tray button, the piano key blocks will play the audio sequentially according to their positions. Each key slot on the tray is attached with a different number of magnets (for example, the first position has one magnet, the second position has two magnets, and so on). When the button on the tray is pressed, the connected ESP board sends information to each ESP board, signaling the start of the overall response. Each piano key block has four capacitors, which can sense the number of magnets and thus determine its position on the tray. For each subsequent position, the audio playback is delayed by 1 second (for example, the first piano key block plays the audio immediately, while the second piano key block waits for one second before playing the audio).</p>
             <p>2. Each piano key block stores different audio files in the DFPlayer. When the button on the key block is pressed, the corresponding audio of that key block will play.</p>
             <p>3. Each time an audio is played, the LEDs and other indicators will light up.</p>
+            <h3>PCB</h3>
+            <img src="./source/weekfinal_27.png" alt="circuit">
+            <img src="./source/weekfinal_28.png" alt="pcb">
+            <img src="./source/weekfinal_26.jpg" alt="pcb board">
             <p><a href="https://www.zcool.com.cn/work/ZNjQ5ODcwMjA%3D.html">reference</a></p>
             <img src="./source/weekfinal_01.png" alt="reference">
             
@@ -101,6 +105,7 @@
             <img src="./source/weekfinal_11.png" alt="circuit">
             <img src="./source/weekfinal_12.png" alt="circuit">
             <img src="./source/weekfinal_20.jpg" alt="pcb milling">
+
             <h3>04 PCB prototypes</h3>
             <img src="./source/weekfinal_16.png" alt="code">
             <img src="./source/weekfinal_18.png" alt="PCB Board">
@@ -116,11 +121,26 @@
             <video src="./source/weekfinal_24.mp4" type="video/mp4" controls></video>
             <p><a href="./source/weekfinal_21.zip">Code</a> that sending message (press button to start part).</p>
             <p><a href="./source/weekfinal_22.zip">Code</a> that receiving message(music box part).</p>
+            <p>-</p>
+            <p>Because it was found that the positive and negative terminals of the battery connected to the ESP board were connected to 3.3V, the original circuit was cut off from the 5V line and reconnected to 3.3V.</p>
+            <img src="./source/weekfinal_26.jpg" alt="pcb board">
+            <p>Then I change the button with the button PCB board, and change the LED to 3 LEDs in series.</p>
+            <img src="./source/weekfinal_29.jpg" alt="pcb board">
+            <h3>05 3D print</h3>
+            <p>Box</p>
+            <img src="./source/weekfinal_30.png" alt="box">
+            <p>Box Button</p>
+            <img src="./source/weekfinal_31.png" alt="box button">
+            <p>Plate</p>
+            <img src="./source/weekfinal_32.png" alt="plate">
+            <p>Plate button</p>
+            <img src="./source/weekfinal_33.png" alt="plate button">
             <h2>Plan</h2>
             <p><strong>5.12 ~ 5.17</strong>: Finish the 3D printed battery block as experiment.</p>
             <p><strong>5.19 ~ 5.23</strong>: Finish the code and PCB board.</p>
             <p><strong>5.26 ~ 5.30</strong>: Finish the first box with PCB and 3D printing.</p>
             <p><strong>6.2 ~ 6.6</strong>: Finish four boxs's PCB, and 3D printing the plateform and box cover.</p>
+            <p><strong>6.7 ~ 6.11</strong>: Check the PCB to make sure it works. Final design and print the box and plate.</p>
             <h2>Challenge and Learning</h2>
             <!-- <p>I want to create a set of tools to facilitate communication and strengthen people's connections.</p> -->
 
